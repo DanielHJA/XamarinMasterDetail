@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MasterDetailLearning.MainPage"
+             BackgroundColor="Gray"
+             MasterBehavior="Default"
+             Title="I am the master">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Gray" Title="Master" Icon="baseline_menu_black.png">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="SomeApp" TextColor="White" HorizontalTextAlignment="Center" FontSize="30"/>
+                    <BoxView/>
+                    <Button Text="Menu item 1" BorderColor="Blue" BorderWidth="1" CornerRadius="5" TextColor="Blue" Clicked="Page1_Button_Clicked"/>
+                    <Button Text="Menu item 2" BorderColor="Blue" BorderWidth="1" CornerRadius="5" TextColor="Blue" Clicked="Page2_Button_Clicked"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <!--<MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>-->
+</MasterDetailPage>
